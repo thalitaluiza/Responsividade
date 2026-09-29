@@ -1,0 +1,133 @@
+
+@media screen and (max-width: 883px){
+    header .menu-desktop, header .btn-contato{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 882px){
+    /* Responsivo da Hero */
+    .hero-site .txt-hero h1{
+        font-size: 2.6em; /*tamanho relativo*/
+        line-height: 45px; /*altura entre linhas*/
+}
+
+    /* Botão Menu Mobile */
+
+    header .btn-menu-mob{
+        display: block;
+    }
+
+    .hero-site .txt-hero p{
+        font-size: 17px;
+    }
+
+    .hero-site .txt-hero p span{
+        display: inline;
+        
+    }
+
+    .hero-site button{
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    /* Responsivo Vantagens */
+
+    .vantagens .itens-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .vantagens .itens-container .img-itens img{
+        width: 100%;
+        
+    }
+    .vantagens .itens-container .txt-itens p{
+        margin-bottom: 20px;
+    }
+
+    .vantagens .itens-container .txt-itens h3{
+        font-size: 2.5em;
+    }
+
+    .itens-container .txt-itens h3 span{
+        font-weight: 300;
+    }
+
+    .vantagens .itens-container .item-2{
+        order: 0;
+    }
+
+    .vantagens .itens-container .item-1{
+        order: 1;
+    }
+
+    /* Estilo Botões de Contato */
+
+    .txt-contato, .icons-contato{
+        display: block; /*texto em cima, imagem em baixo*/
+        width: 100%;
+        
+    }
+    .contato .txt-contato h3{
+        font-size: 2.5em;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contato .txt-contato p{
+        margin-bottom: 20px;
+    }
+
+    .contato .icons-contato a p{
+        font-size: 1.3em;
+    }
+
+    .contato .icons-contato button{
+        width: 100%;
+    }
+
+    /* Sessão Hotéis */
+
+    .hoteis h3{
+        font-size: 2.6em;
+        line-height: 40px;
+    }
+
+    /* Estilo Como funciona */
+
+    .txt-funciona, .instrucoes{
+        display: block; /*um em cima e outro embaixo*/
+        width: 100%;
+    }
+
+    .como-funciona .txt-funciona{
+        position: static;
+    }
+
+    .como-funciona .txt-funciona h3{
+        font-size: 3em;
+        line-height: 50px;
+    }
+
+    /* Rodapé */
+
+    footer .top-footer button{
+     margin-right: 10px;
+    }
+
+    footer .middle-footer a{
+        margin: 15px 0;
+        display: block;
+    }
+
+    footer .bottom-footer p{
+        font-size: 14px;
+    }
+
+
+    }

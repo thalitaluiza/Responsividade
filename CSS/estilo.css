@@ -15,6 +15,7 @@ body{
 .interface{
     max-width: 1280px; /*largura máxima*/
     margin: 0 auto;
+    padding: 0 4%; /*pra corrigir a magem lateral quando a tela diminui*/
 }
 
 header .btn-contato button, .hero-site button, .hoteis button{
@@ -49,7 +50,7 @@ header .interface{
 }
 
 header .logo img{
-    max-width: 50px;
+    max-width: 35px;
 }
 
 /* menu dinâmico */
@@ -114,7 +115,91 @@ header .btn-contato button{
     transform: scale(1.05);
 }
 
+/* Botão Menu Mobile */
 
+header .btn-menu-mob{
+    display: none;
+    position: relative;
+    z-index: 11;
+}
+
+header .btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background-color: #000;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(47deg) translate(30%);
+    background-color: #fff; /*linha fica branca mesmo se o usuário rolar a página*/
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+    background-color: #fff; /*linha fica branca mesmo se o usuário rolar a página*/
+}
+
+/* Estilo Menu mobile */
+
+header .menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0; /*pro menu vir do lado direito quando clica*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden; /*esconde o menu quando ele não está ativo*/
+    transition: 0.5s;
+}
+
+header .menu-mobile nav{
+    width: 100%;
+}
+
+header .menu-mobile nav ul{
+    list-style-type: none;
+}
+header .menu-mobile nav a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0; /*para o link aceitar o paddin tem que ser display block*/
+    display: block;
+    transition: 0.5s;
+}
+
+header .menu-mobile nav a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 20px #fff;
+}
+
+header .menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    overflow: hidden; /*não dixa a página rolar se o menu estiver aberto*/
+}
 
 /* Estilo do Hero */
 section.hero-site{
@@ -185,6 +270,7 @@ section.vantagens{
 .itens-container .txt-itens h3 span{
     font-weight: 300;
 }
+
 /* Botões de Contato */
 section.contato{
     background-color: #fff;
@@ -360,7 +446,8 @@ footer .top-footer button{
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 0 15px;
+    margin-right: 30px;
     transition: 0.5s;
 }
 

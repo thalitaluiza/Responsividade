@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Responsivo</title>
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/responsive.css" media="screen">
 
 
     <!-- Fonte -->
@@ -21,6 +22,7 @@
     <!-- Scripts de JS -->
      <script src="Java Script/menu.js" defer></script> <!-- o defer indica que esse aquivo de JS só será carregado após 
      o html inteiro for carregado-->
+     <script src="Java Script/btn-menu-mob.js" defer></script>
 
 </head>
 
@@ -51,6 +53,22 @@
                 <a href="#">
                     <button>Contato</button>
                 </a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menumob-1"></div>
+                <div class="line-menumob-2"></div>
+            </div>
+
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Destinos</a></li>
+                        <li><a href="#">Hotéis</a></li>
+                        <li><a href="#">Passagens</a></li>
+                    </ul>
+                </nav>
             </section>
 
         </div>
@@ -95,11 +113,11 @@
         </article>
         <article class="itens-container">
 
-             <div class="img-itens">
+             <div class="img-itens item-1">
                 <img src="imagens/carro.png" alt="">
             </div>
 
-            <div class="txt-itens">
+            <div class="txt-itens item-2">
                 <h3><span>Os </span>melhores<br>destinos</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Officia hic illum corporis quidem atque fugiat numquam expedita possimus commodi ea veniam 
@@ -296,7 +314,7 @@
 
             <section class="middle-footer">
                 <a href="">Suporte</a>
-                <a href="">informações</a>
+                <a href="">Informações</a>
                 <a href="">Marketing</a>
             </section>
 
